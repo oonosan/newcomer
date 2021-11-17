@@ -29,6 +29,14 @@ h1 {
 	letter-spacing: -0.4px;
 }
 
+h2 {
+	color: #223150;
+	font-weight: 700;
+	font-size: 2rem;
+	line-height: 2.5rem;
+	letter-spacing: -0.4px;
+}
+
 .p-large {
 	font-size: 1.125rem;
 	line-height: 1.75rem;
@@ -271,33 +279,6 @@ a:hover {
 	color: #9cd4cc;
 }
 
-/**************************/
-/*     Sections           */
-/**************************/
-.s1{
-    background: url('../img/home-background.jpg');
-    background-size:cover;
-
-    h1{
-        color: white;
-    }
-}
-
-.s2{
-    h1{
-        color: white;
-    }
-    background: black;
-}
-
-.s3{
-    h1{
-        text-align: left;
-        margin-left: 2em;
-        font-size: 2rem;
-    }
-}
-
 /**********************/
 /*     Navigation     */
 /**********************/
@@ -315,8 +296,7 @@ a:hover {
 }
 
 .navbar .logo-image img {
-    width: 126px;
-	height: 32px;
+	height: 2em;
 }
 
 .navbar .navbar-nav {
@@ -453,6 +433,46 @@ a:hover {
 }
 
 /*************************/
+/*         Header        */
+/*************************/
+.header-text-container {
+    text-align: center;
+}
+
+/**************************/
+/*         Home           */
+/**************************/
+.home{
+    background: url('../img/home-background.jpg');
+    background-size:cover;
+
+    h1{
+        color: white;
+    }
+}
+
+/*************************/
+/*       Services        */
+/*************************/
+.basic-1 {
+	background: linear-gradient(rgb(252, 250, 251), rgb(255, 255, 255));
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+	padding: 4.75rem 3em;
+}
+
+/*
+#services-container {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	height: 80vh;
+}
+*/
+
+/*************************/
 /*     Media Queries     */
 /*************************/	
 /* Min-width 768px */
@@ -510,7 +530,8 @@ a:hover {
 
 	/* Navigation */
 	.navbar {
-		padding-top: 1.75rem;
+		padding-top: 1rem;
+		padding-bottom: 1rem;
 		background-color: #fcfafb;
 		box-shadow: none;
 		transition: all 0.2s;

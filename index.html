@@ -25,7 +25,7 @@
         <div class="container">
             <!-- Image Logo -->
             <div>
-                <a class="navbar-brand logo-image" href="index.html"><img src="img/logo.png" alt="Newcomer"></a>
+                <a class="navbar-brand logo-image" href="index.html"><img src="img/logo-newcomer.png" alt="Newcomer"></a>
             </div>
 
             <button class="navbar-toggler p-0 border-0" type="button" id="navbarSideCollapse"
@@ -70,19 +70,38 @@
     <!-- end of navigation -->
 
     <div id="fullPage">
-        <section class="section s1" id="home-container">
-                <h1>HOME</h1>
+        <!-- Home -->
+        <section class="section home" id="home-container">
+            <header>
+                <div class="container">
+                    <div class="header-text-container">
+                        <h1 class="h1-large">NEWCOMER</h1>
+                        <p class="p-large">Consultoría de Servicios Migratorios Argentina</p>
+                        <a class="btn-solid-lg" href="#services">Offered services</a>
+                    </div>
+                </div>
+            </header>
         </section>
         
-        <section class="section s2" id="services-container">
-            <div class="slide">
-                <h1>SERVICES</h1>
-            </div>
-            <div class="slide">
-                <h1>2ND SLIDE</h1>
-            </div>
-            <div class="slide">
-                <h1>3RD SLIDE</h1>
+        <!-- Services -->
+        <section class="section">
+            <div id="services-container" class="basic-1">
+                <div class="col-lg-6 col-xl-7">
+                    <div class="image-container">
+                        <img class="img-fluid" src="img/CustomerSupport/custmer-support.png" alt="alternative">
+                    </div> <!-- end of image-container -->
+                </div> <!-- end of col -->
+                <div class="col-lg-6 col-xl-5">
+                    <div class="text-container">
+                        <h2>Services</h2>
+                        <p>We solve and facilitate obtaining documents for Argentines abroad and for future
+                            residents in our country, in order to propitiantly satisfy our customers. We intend
+                            to avoid those contingencies that the assigned faces when obtaining documents
+                            related to the migratory movement inside or outside the country. We welcome you with
+                            optimism and professionalism. Crossing borders with NEWCOMER.</p>
+                        <a class="btn-solid-reg" href="#learnmore">Learn more</a>
+                    </div> <!-- end of text-container -->
+                 </div> <!-- end of col -->
             </div>
         </section>
         
@@ -93,7 +112,6 @@
         <section class="section s4" id="contact-container">
             <h1>CONTACT</h1>
         </section>
-        
     </div>
 
     <!-- Back To Top Button -->
@@ -116,7 +134,8 @@
             scrollingSpeed: 1000,
             controlArrows: false,
             slidesNavigation: true,
-            scrollBar: true
+            scrollBar: true,
+            v2compatible: true
         })
     </script>
 </body>
