@@ -18,9 +18,11 @@ body,
 html {
   width: 100%;
   height: 100%;
+  scroll-behavior: smooth;
 }
 
-body, p {
+body,
+p {
   color: #5e6576;
   font: 400 1rem/1.625rem "Open Sans", sans-serif;
 }
@@ -34,22 +36,11 @@ h1 {
 }
 
 h2 {
-  color: #223150;
+  color: #9cd4cc;
   font-weight: 700;
   font-size: 2rem;
   line-height: 2.5rem;
   letter-spacing: -0.4px;
-}
-
-.p-large {
-  font-size: 1.125rem;
-  line-height: 1.75rem;
-  color: #fff;
-}
-
-.p-small {
-  font-size: 0.875rem;
-  line-height: 1.5rem;
 }
 
 .testimonial-text {
@@ -101,6 +92,16 @@ a:hover {
   color: #9cd4cc;
   font-weight: 600;
   font-size: 0.875rem;
+}
+
+.button-centered {
+  margin-top: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .btn-solid-reg {
@@ -485,8 +486,6 @@ a:hover {
 /*       Services        */
 /*************************/
 .basic-1 {
-  background: -webkit-gradient(linear, left top, left bottom, from(#fcfafb), to(white));
-  background: linear-gradient(#fcfafb, white);
   height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -504,14 +503,13 @@ a:hover {
 /*       Profile         */
 /*************************/
 .cards-2 {
-  padding-top: 5rem;
+  padding-top: 2rem;
   padding-bottom: 2.25rem;
   text-align: center;
 }
 
 .cards-2 .card {
   position: relative;
-  margin-bottom: 5rem;
   border-radius: 10px;
   -webkit-box-shadow: 0 4px 20px -1px rgba(0, 0, 0, 0.1);
           box-shadow: 0 4px 20px -1px rgba(0, 0, 0, 0.1);
@@ -529,7 +527,7 @@ a:hover {
 
 .cards-2 .testimonial-author {
   margin-bottom: 0.125rem;
-  color: #223150;
+  color: #9cd4cc;
 }
 
 .cards-2 .occupation {
@@ -618,6 +616,47 @@ a:hover {
   opacity: 0.7;
 }
 
+/*-------------------------*/
+.swiper {
+  height: 20rem;
+  text-align: center;
+}
+
+.swiper-slide {
+  text-align: center;
+  background: #fff;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.slide-title {
+  font-size: 1.5em;
+  font-weight: 600;
+}
+
+.slide-description {
+  margin-left: 4rem;
+  margin-right: 4rem;
+}
+
+.swiper-button-prev,
+.swiper-button-next,
+.swiper-pagination-bullet-active {
+  --swiper-theme-color: #5e6576;
+}
+
 /***********************/
 /*     Extra Pages     */
 /***********************/
@@ -625,6 +664,10 @@ a:hover {
   padding-top: 9rem;
   padding-bottom: 5rem;
   background-color: #fcfafb;
+}
+
+.swiper-scrollbar {
+  visibility: hidden;
 }
 
 /*************************/
@@ -640,6 +683,9 @@ a:hover {
   .header .h1-large {
     font-size: 3.25rem;
     line-height: 3.75rem;
+  }
+  .p-large {
+    color: #fff;
   }
   /* end of header */
   /* Statistics */
@@ -662,6 +708,9 @@ a:hover {
         -ms-flex-align: center;
             align-items: center;
     padding: 4.75rem 3em;
+    background: white;
+    background: -webkit-gradient(linear, left top, left bottom, from(white), color-stop(49%, #f6f5f5), to(white));
+    background: linear-gradient(180deg, white 0%, #f6f5f5 49%, white 100%);
   }
   .cards-2 .card {
     display: inline-block;
